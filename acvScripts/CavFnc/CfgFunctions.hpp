@@ -3,7 +3,7 @@ class acvScripts {
         file = "acvScripts\cavFnc\functions\init";
         class initSupply {};
         class initVehicle {};
-        class initHelo {};
+        class initHelo {};  // change classnames
         class initDocuments {};
         class initMissionStartHint {};
         class initTrainingStartHint {};
@@ -27,13 +27,13 @@ class acvScripts {
 
     class main {
         file = "acvScripts\cavFnc\functions\main";
-        class doStarterCrate {};
-        class doStarterCrateSupplies {};
+        class doStarterCrate {};        // check settings
+        class doStarterCrateSupplies {};    // change inventory
     };
 
     class supplies {
         file = "acvScripts\cavFnc\functions\supplies";
-        class doSupplyCrate {};
+        class doSupplyCrate {}; // check all
 
         class doAmmoCrate {};
         class doExplosivesCrate {};

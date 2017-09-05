@@ -2,92 +2,91 @@
 GearVersionDate: 170412
 */
 class CAV_SquadLeader : CommonBlufor {                  // Squad Leader
-    backpack[] = {"tf_rt1523g_big_rhs"};
-    headgear[] = {"rhsusf_ach_helmet_headset_ocp"};
 
-    primary[] = {"rhs_weap_m4a1_carryhandle","acc_pointer_IR","rhsusf_acc_ACOG_RMR"};
-    
-    binoculars[] = {"ACE_Vector"};
+    secondary[] = {"uns_m1911"};
+
+    binoculars[] = {"Binocular"};
 
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",9,
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2,
 
-        "rhs_mag_m67",2,
+        "uns_20Rnd_556x45_Stanag",9,
 
-        "SmokeShell",6,
-        "SmokeShellGreen",1,
-        "SmokeShellRed",1,
-        "SmokeShellYellow",1
+        "uns_m61gren",6,
+        
+        "uns_m18white",6,
+
+        "uns_m1911mag",2,
+
+        "uns_m18white",6,
+        "uns_m18Blue",1,
+        "uns_m18red",1,
+        "uns_m18Yellow",1
+
     };
     items[] = {
+
         // Personal Medical Equipment
-        "ACE_quikclot",10,
+        "ACE_packingBandage",10,
         "ACE_tourniquet",2,
-        "ACE_personalAidKit",
         
         // Standard
         "ACE_EarPlugs",
         "ACE_MapTools",
         "ACE_CableTie",
 
-        // Electronics
-        "ACE_microDAGR",
-        "ACE_HuntIR_monitor",
-
         // Tools
+        "ACE_Flashlight_MX991",
+        "ACE_MapTools",
+        "ACE_SpraypaintBlue",
         "ACE_SpraypaintRed",
-        "ACE_EntrenchingTool",
-        
-        "DAR_Beret_Mar"
+        "ACE_EntrenchingTool"
+
     };
-    gps[] = {"ItemAndroid"};
 };
+
 class CAV_TeamLeader : CommonBlufor {                   // Fire Team Leader
-    backpack[] = {"B_Kitbag_cbr"};
 
-    primary[] = {"rhs_weap_m4a1_m320","acc_pointer_IR","rhsusf_acc_ACOG_RMR"};
-    
-    binoculars[] = {"ACE_Vector"};
+    secondary[] = {"uns_m1911"};
+
+    binoculars[] = {"Binocular"};
 
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",9,
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2,
 
-        "rhs_mag_m67",6,
+        "uns_20Rnd_556x45_Stanag",9,
 
-        "SmokeShell",6,
-        "SmokeShellGreen",1,
-        "SmokeShellRed",1,
-        "SmokeShellYellow",1,
+        "uns_m61gren",6,
+        
+        "uns_m18white",6,
 
-        "rhs_mag_M441_HE",11,
-        "rhs_mag_M433_HEDP",2,
-        "rhs_mag_m714_White",2,
-        "ACE_HuntIR_M203"
+        "uns_m1911mag",2,
+
+        "uns_m18white",6,
+        "uns_m18Blue",1,
+        "uns_m18red",1,
+        "uns_m18Yellow",1
+
     };
     items[] = {
+
         // Personal Medical Equipment
-        "ACE_quikclot",10,
+        "ACE_packingBandage",10,
         "ACE_tourniquet",2,
-        "ACE_personalAidKit",
         
         // Standard
         "ACE_EarPlugs",
         "ACE_MapTools",
         "ACE_CableTie",
 
-        // Electronics
-        "ACE_microDAGR",
-        "ACE_HuntIR_monitor",
-
         // Tools
+        "ACE_Flashlight_MX991",
+        "ACE_MapTools",
+        "ACE_SpraypaintBlue",
         "ACE_SpraypaintRed",
-        "ACE_EntrenchingTool",
-        
-        "DAR_Beret_Mar"
+        "ACE_EntrenchingTool"
+
     };
 };
+
 class CAV_AutomaticRifleman : CommonBlufor {            // Automatic Rifleman
     primary[] = {"rhs_weap_m249_pip_L","acc_pointer_IR","rhsusf_acc_ACOG_RMR"};
 

@@ -1,243 +1,195 @@
 /*
-GearVersionDate: 160412
+GearVersionDate: 170926
 */
+
 class CAV_TankCommander : CommonBlufor {            // Tank Commander
-    backpack[] = {"tf_rt1523g_big_rhs"};
-    goggles[] = {"G_Lowprofile"};
-    headgear[] = {"rhsusf_cvc_green_helmet"};
-    vest[] = {"rhsusf_iotv_ocp_Repair"};
 
-    primary[] = {"rhs_weap_m4a1_m320","rhsusf_acc_anpeq15side","rhsusf_acc_ACOG3"};
-    
-    binoculars[] = {"ACE_Vector"};
+    headgear[] = {"UNS_TC_2"};
+	
+	vest[] = {"UNS_M1956_T1"};
+	
+	primary[] = {"uns_thompson"};
+	
+    secondary[] = {"uns_m1911"};
+
+    binoculars[] = {"Binocular"};
 
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",6,
+       
+		// Thompson Magazines
+	   "uns_thompsonmag_30",7,
 
-        "rhs_mag_m67",2,
+        //Granades
+        "uns_m61gren",2,
+		
+		//Sidearm
+        "uns_m1911mag",2,
 
-        "rhs_mag_an_m8hc",2,
-        "rhs_mag_m18_green",2,
-        "rhs_mag_m18_red",2,
-
-        "UGL_FlareCIR_F",2,
-        
-        "Chemlight_green",2,
-        "ACE_Chemlight_HiRed",2
-    };
-    items[] = {
-        // Medical Equipment
-        "ACE_quikclot",10,
-        "ACE_morphine",5,
-        
-        // Standard
-        "ACE_EarPlugs",2,
-        "ACE_MapTools",
-        "ACE_Flashlight_MX991",        
-
-        // Electronics
-        "ACE_microDAGR",
-        "ACE_IR_Strobe_Item"
+        //Smoke
+        "uns_m18white",4,
+        "uns_m18Blue",2,
+        "uns_m18red",2,
+		"uns_m18Yellow",1,
+		
+		//Light sticks
+		"Chemlight_yellow",2,
+		
+		//Explosives
+		"SatchelCharge_Remote_Mag",1	
+		
     };
 
-    gps[] = {"itemCTab"};
-    nvgs[] = {"rhsusf_ANPVS_15"};
 };
-class CAV_TankGunner : CommonBlufor {               // Tank Gunner
-    backpack[] = {"B_AssaultPack_cbr"};
-    goggles[] = {"G_Lowprofile"};
-    headgear[] = {"rhsusf_cvc_green_helmet"};
-    vest[] = {"rhsusf_iotv_ocp_Repair"};
 
-    primary[] = {"rhs_weap_m4a1_carryhandle","rhsusf_acc_anpeq15side","rhsusf_acc_ACOG3"};
+class CAV_TankCrew : CommonBlufor {               // Tank Crew
 
+    backpack[] = {"UNS_USMC_E1"};
+
+    headgear[] = {"UNS_TC_1"};
+	
+	vest[] = {"UNS_M1956_T1"};
+	
+	primary[] = {"uns_m3a1"};
+	
+	launcher[] = {"uns_m72"};
+	
+    binoculars[] = {"Binocular"};
+	
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",6,
-
-        "rhs_mag_m67",2,
-
-        "rhs_mag_an_m8hc",2,
-        "rhs_mag_m18_green",2,
-        "rhs_mag_m18_red",2,
-
-        "UGL_FlareCIR_F",
-
-        "Chemlight_green",2,
-        "ACE_Chemlight_HiRed",2
+		
+        // M3A1 Magazines
+		"uns_m3a1mag",7,
+	
+        //Granades
+        "uns_m61gren",2,
+		
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",1,
+        "uns_m18red",2,
+		"uns_m18Yellow",1,
+		
+		//Light sticks
+		"Chemlight_yellow",2
+		
     };
-    items[] = {
-        // Medical Equipment
-        "ACE_quikclot",60,
-        "ACE_morphine",35,
-        "ACE_personalAidKit",2,
 
-        // Standard
-        "ACE_EarPlugs",2,
-        "ACE_MapTools",
-        "ACE_Flashlight_MX991",        
-
-        // Electronics
-        "ACE_IR_Strobe_Item"
-    };
-    
-    gps[] = {"itemAndroid"};
-    nvgs[] = {"rhsusf_ANPVS_15"};
 };
-class CAV_TankDriver : CommonBlufor {               // Tank Driver
-    backpack[] = {"B_AssaultPack_cbr"};
-    goggles[] = {"G_Lowprofile"};
-    headgear[] = {"rhsusf_cvc_green_helmet"};
-    vest[] = {"rhsusf_iotv_ocp_Repair"};
 
-    primary[] = {"rhs_weap_m4a1_carryhandle","rhsusf_acc_anpeq15side","rhsusf_acc_ACOG3"};
+class CAV_ATC : CommonBlufor {				//Air Trafic Controller
 
-    magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",6,
+    backpack[] = {"tf_rt1523g_green"};
+	
+    goggles[] = {"G_Combat"};
+	
+    headgear[] = {"H_Cap_marshal"};
+	
+	uniform[] = {"CUP_U_B_USMC_Pilot"};
+	
+    vest[] = {"ACV_LHDVest_Yellow"};
 
-        "rhs_mag_m67",2,
-
-        "rhs_mag_an_m8hc",2,
-        "rhs_mag_m18_green",2,
-        "rhs_mag_m18_red",2,
-
-        "UGL_FlareCIR_F",
-        
-        "Chemlight_green",2,
-        "ACE_Chemlight_HiRed",2
+    primary[] = {""};
+	
+    binoculars[] = {"Binocular"};
+	
+	    magazines[] = {		
     };
-    items[] = {
-        // Medical Equipment
-        "ACE_quikclot",35,
-        "ACE_morphine",10,
-        
-        // Standard
-        "ACE_EarPlugs",2,
-        "ACE_MapTools",
-        "ACE_Flashlight_MX991",      
-        
-        // Electronics
-        "ACE_IR_Strobe_Item",
-        
-        //Tools
-        "ToolKit"
-    };
-    
-    gps[] = {"itemAndroid"};
-    nvgs[] = {"rhsusf_ANPVS_15"};
-};
-class CAV_TankLoader : CommonBlufor {               // Tank Loader
-    backpack[] = {"B_AssaultPack_cbr"};
-    goggles[] = {"G_Lowprofile"};
-    headgear[] = {"rhsusf_cvc_green_helmet"};
-    vest[] = {"rhsusf_iotv_ocp_Repair"};
-
-    primary[] = {"rhs_weap_m4a1_carryhandle","rhsusf_acc_anpeq15side","rhsusf_acc_ACOG3"};
-
-    magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",6,
-
-        "rhs_mag_m67",2,
-
-        "rhs_mag_an_m8hc",2,
-        "rhs_mag_m18_green",2,
-        "rhs_mag_m18_red",2,
-
-        "UGL_FlareCIR_F",
-        
-        "Chemlight_green",2,
-        "ACE_Chemlight_HiRed",2
-    };
-    items[] = {
-        // Medical Equipment
-        "ACE_quikclot",30,
-        "ACE_morphine",15,
-        "ACE_personalAidKit",2,
-        
-        // Standard
-        "ACE_EarPlugs",2,
-        "ACE_MapTools",
-        "ACE_Flashlight_MX991",
-
-        // Electronics
-        "ACE_IR_Strobe_Item"
-    };
-    
-    gps[] = {"itemAndroid"};
-    nvgs[] = {"rhsusf_ANPVS_15"};
+	
+	
+	
 };
 
 class CAV_HeloPilot : CommonBlufor {                // Helo Pilot
-    headgear[] = {"H_PilotHelmetHeli_B"};
-    vest[] = {"rhsusf_iotv_ocp_Rifleman"};
 
-    primary[] = {"rhs_weap_m4a1_carryhandle","RH_ta31rmr"};
+	headgear[] = {"UNS_HP_Helmet"};
+	
+	uniform[] = {"UNS_Pilot_BDU"};
+	
+    vest[] = {"CUP_V_B_PilotVest"};
+
+    primary[] = {"uns_thompson"};
 
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6,
-
-        "rhs_mag_m67",2,
-
-        "rhs_mag_an_m8hc",7,
-        "rhs_mag_m18_red",2,
-        "rhs_mag_m18_green",2,
-        "rhs_mag_m18_yellow",2,
-
-        "Chemlight_red",2,
-        "Chemlight_blue",2
+		
+        // Thompson Magazines
+		"uns_thompsonmag_30",5,
+	
+        //Granades
+        "uns_m61gren",2,
+		
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",1,
+		"uns_m18Red",1,
+		
+		//Light sticks
+		"Chemlight_yellow",2
+		
     };
-    items[] = {
-        // Medical Equipment
-        "ACE_quikclot",10,
-        "ACE_tourniquet",
-        
-        // Standard
-        "ACE_EarPlugs",2,
-        "ACE_MapTools",
-        "ACE_CableTie",2,
-        
-        // Electronics
-        "ACE_microDAGR",
-        "ACE_IR_Strobe_Item"
+
+};
+
+class CAV_HeloCrew : CommonBlufor {                // Helo Pilot
+
+	headgear[] = {"UNS_HP_Helmet"};
+	
+	uniform[] = {"UNS_Pilot_BDU"};
+	
+    vest[] = {"CUP_V_B_PilotVest"};
+
+    primary[] = {"uns_thompson"};
+
+    magazines[] = {
+		
+        // Thompson Magazines
+		"uns_thompsonmag_30",5,
+	
+        //Granades
+        "uns_m61gren",2,
+		
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",1,
+		"uns_m18Red",1,
+		
+		//Light sticks
+		"Chemlight_yellow",2
+		
     };
-    
-    gps[] = {"ItemAndroid"};
-    nvgs[] = {"rhsusf_ANPVS_15"};
+
 };
 
 class CAV_FixedPilot : CommonBlufor {				// Fixed Wing Pilot
-    backpack[] = {""}; 						// must have access to tf_rt1523g
-    uniform[] = {"U_B_PilotCoveralls"};
-    headgear[] = {"RHS_jetpilot_usaf"};
-    vest[] = {"V_TacVest_blk"};
+
+    backpack[] = {"UNS_BA22_Para"}; 						// -----<>>>--- must have access to tf_rt1523g   <- is there a script for parachute?
 	
-    primary[] = {"rhs_weap_mk18_bk"};
+    headgear[] = {"UNS_JP_Helmet2"};
 	
-    binoculars[] = {"ACE_Vector"};
+	uniform[] = {"CUP_U_B_USMC_Pilot"};
+	
+    vest[] = {"UNS_JP_Vest"};
+	
+	primary[] = {""};
+	
+	secondary[] = {"uns_m1911"};	
+
+    binoculars[] = {"Binocular"};
 
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",2,
+		
+		//Sidearm
+        "uns_m1911mag",2,
+		
+        //Granades
+        "uns_m61gren",2,
+		
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",1,
+		
+		//Light sticks
+		"Chemlight_yellow",2
+		
+    };
 
-        "rhs_mag_m18_purple",2,
-        "rhs_mag_m18_green",2,
-        "rhs_mag_m18_yellow",2
-    };
-    items[] = {
-        // Medical Equipment
-        "ACE_epinephrine",2,
-        "ACE_morphine",2,
-        "ACE_quikclot",10,
-        "ACE_tourniquet",
-        
-        // Standard
-        "ACE_EarPlugs",2,
-        "ACE_MapTools",
-        
-        // Electronics
-        "ItemWatch",
-        "ACE_IR_Strobe_Item",
-        "ACE_Flashlight_MX991"
-    };
-    
-    gps[] = {"ItemAndroid"};
-    nvgs[] = {""};
 };

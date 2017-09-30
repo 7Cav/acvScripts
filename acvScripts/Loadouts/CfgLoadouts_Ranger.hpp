@@ -1,64 +1,128 @@
 /*
-GearVersionDate: 170723
+GearVersionDate: 170926
 */
 
 class CAV_Ranger : CommonBlufor {
+
+    secondary[] = {"uns_m1911"};
+
+    binoculars[] = {"Binocular"};
+
+    magazines[] = {
+
+	    // M16 Magazines
+        "uns_20Rnd_556x45_Stanag",5,
+		"uns_20Rnd_556x45_Stanag_T",5,
+		
+        //Granades
+        "uns_m61gren",6,
+		
+		//Sidearm
+        "uns_m1911mag",4,
+
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",4,
+        "uns_m18red",2,
+	
+    };
+	
+     watch[] = {"ACE_Altimeter"};
+	
 };
 
 class CAV_Sniper : CommonBlufor {
-    backpack[] = {"B_AssaultPack_cbr"};
-    vest[] = {"rhsusf_spcs_ocp"};
 
-    primary[] = {"rhs_weap_sr25_d","Leupold_Mk4"};
-    
-    binoculars[] = {"ACE_Vector"};
+    secondary[] = {"uns_m1911"};
+	
+    binoculars[] = {"Binocular"};
 
     magazines[] = {
-        "rhsusf_20Rnd_762x51_m118_special_Mag",10,
-        
-        "rhs_mag_m67",4,
-        
-        "rhs_mag_an_m8hc",6
+
+	    // M16 Magazines
+        "uns_20Rnd_556x45_Stanag",5,
+		"uns_20Rnd_556x45_Stanag_T",5,
+		
+        //Granades
+        "uns_m61gren",6,
+		
+		//Sidearm
+        "uns_m1911mag",4,
+
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",4,
+        "uns_m18red",2,
+	
     };
+	
     items[] = {
+
         // Personal Medical Equipment
-        "ACE_quikclot",10,
-        "ACE_morphine",2,
-        "ACE_tourniquet",1,
-        "ACE_personalAidKit",
+        "ACE_packingBandage",10,
+        "ACE_tourniquet",2,
+        "ACE_morphine",1,	
         
         // Standard
         "ACE_EarPlugs",
+        "ACE_CableTie",
+
+        // Tools
+        "ACE_Flashlight_MX991",
         "ACE_MapTools",
-
-        // Electronics
-        "ACE_microDAGR",
-        
-        "ACE_ATragMX",
-        "ACE_Kestrel4500",
-        
-        // Tools        
-        "ACE_RangeCard",
-        "ACE_Flashlight_MX991"
-    };
-    gps[] = {"ItemAndroid"};
+		"ACE_RangeCard",
+        "ACE_EntrenchingTool"
+		
+    };    
+	
     watch[] = {"ACE_Altimeter"};
+	
 };
-class CAV_Spotter : CAV_Sniper {
-    backpack[] = {"tf_rt1523g"};
 
-    primary[] = {"rhs_weap_m4a1_carryhandle","Leupold_Mk4"};
-    
-    binoculars[] = {"ACE_Vector"};
+class CAV_Spotter : CAV_Sniper {
+
+    secondary[] = {"uns_m1911"};
+
+    binoculars[] = {"Binocular"};
 
     magazines[] = {
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",5,
-        "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2,
-        
-        "rhs_mag_m67",4,
-        
-        "rhs_mag_an_m8hc",6
+
+	    // M16 Magazines
+        "uns_20Rnd_556x45_Stanag",5,
+		"uns_20Rnd_556x45_Stanag_T",5,
+		
+        //Granades
+        "uns_m61gren",6,
+		
+		//Sidearm
+        "uns_m1911mag",4,
+
+        //Smoke
+        "uns_m18white",6,
+        "uns_m18Blue",4,
+        "uns_m18red",2,
+	
     };
-    gps[] = {"ItemAndroid"};
+	
+    items[] = {
+
+        // Personal Medical Equipment
+        "ACE_packingBandage",10,
+        "ACE_tourniquet",2,
+        "ACE_morphine",1,	
+        
+        // Standard
+        "ACE_EarPlugs",
+        "ACE_CableTie",
+
+        // Tools
+        "ACE_Flashlight_MX991",
+        "ACE_MapTools",
+		"ACE_RangeCard",
+        "ACE_EntrenchingTool"
+		
+    };  
+	
     watch[] = {"ACE_Altimeter"};
+	
 };

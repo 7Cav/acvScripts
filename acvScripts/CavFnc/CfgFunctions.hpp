@@ -1,9 +1,8 @@
 class acvScripts {
     class init {
         file = "acvScripts\cavFnc\functions\init";
-        class initSupply {};
         class initVehicle {};
-        class initHelo {};  // change classnames
+        class initHelo {};
         class initDocuments {};
         class initMissionStartHint {};
         class initTrainingStartHint {};
@@ -11,7 +10,6 @@ class acvScripts {
 
         class initModuels {};
 
-        class initCuratorHeloFRIES {};
         class initCuratorHeloGetOutRL {};
     };
     class DiaryRecord {
@@ -27,21 +25,13 @@ class acvScripts {
 
     class main {
         file = "acvScripts\cavFnc\functions\main";
-        class doStarterCrate {};        // check settings
-        class doStarterCrateSupplies {};    // change inventory
+        class doStarterCrate {};
+        class doStarterCrateSupplies {};
     };
 
     class supplies {
         file = "acvScripts\cavFnc\functions\supplies";
-        class doSupplyCrate {}; // check all
-
-        class doAmmoCrate {};
-        class doExplosivesCrate {};
-        class doGrenadesCrate {};
-        class doLaunchersCrate {};
-        class doMedicalCrate {};
-        class doSpecialWeaponsCrate {};
-        class doWeaponsCrate {};
+        class doEmptyCrate {};
     };
 
     class systems {
@@ -65,14 +55,11 @@ class acvScripts {
 
     class misc {
         file = "acvScripts\cavFnc\functions\misc";
-        class attachVehicleLabel {};
-        class UH60TailNumber {}; //will be merged with "attachVehicleLabel"
         class flag {};
     };
-    class moduels {
-        file = "acvScripts\cavFnc\functions\moduels";
+    class modules {
+        file = "acvScripts\cavFnc\functions\modules";
         class moduelCreateStarterCrate {};
-        //class moduelApplySupply {};
         class moduelApplyTailNumber {};
         class moduelReadyHelicopter {};
         class moduelApplyFlag {};

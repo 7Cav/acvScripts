@@ -1,7 +1,12 @@
+
 /*
-GearVersionDate: 160801
+GearVersionDate: 170926
 */
+
 class S3_BASE : CAV_Officer {
+	
+	headgear[] = {"DAR_Stetson"};	
+	
     insignia[] = {"Curator"};
     /*preLoadout = " \
     (_this select 0) setVariable [""ACE_medical_medicClass"", 2, true]; \

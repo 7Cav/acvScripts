@@ -1,15 +1,27 @@
-// Crewman
-class rhsusf_army_ocp_crewman : CAV_TankCommander {};             // Tank Commander
-class rhsusf_army_ocp_combatcrewman : CAV_TankGunner {};          // Tank Gunner
-class rhsusf_army_ocp_driver : CAV_TankDriver {};                // Tank Driver
-class rhsusf_army_ocp_driver_armored : CAV_TankLoader {};          // Tank Loader
+/*
+GearVersionDate: 170926
+*/
+
+// Tank Commander
+class B_Competitor_F : CAV_TankCommander {};
+
+// Tank Crew
+class B_crew_F : CAV_TankCrew {};
+
+
+
+
+//Air Trafic Controller
+class B_Deck_Crew_F : CAV_ATC {};
 
 // Helo Pilot
 class B_Helipilot_F : CAV_HeloPilot {};
-class rhsusf_army_ocp_helipilot : CAV_HeloPilot {};
-class rhsusf_army_ucp_helipilot : CAV_HeloPilot {};
+class uns_pilot2 : CAV_HeloPilot {};
+
+// Helo Crew
+class B_helicrew_F : CAV_HeloCrew {};
+
 
 // Fixed Wing Pilot
-class B_Pilot_F : CAV_FixedPilot {};
-class rhsusf_airforce_jetpilot : CAV_FixedPilot {};
-class rhsusf_airforce_pilot : CAV_FixedPilot {};
+class B_Fighter_Pilot_F : CAV_FixedPilot {};
+class uns_pil1 : CAV_FixedPilot {};
